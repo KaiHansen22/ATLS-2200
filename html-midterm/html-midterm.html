@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error-Filled Page</title>
+</head>
+<body>
+    <h1>Welcome to My Error-Filled Page</h1>
+    
+    <p>This is a paragraph with mismatched tags and missing closing tags.</p>
+    
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ol>
+
+    <p>This is another paragraph without proper indentation.</p>
+    
+    <img src="image.jpg" alt="Placeholder image">
+
+    <a href="https://www.example.com" target="_blank">Click me!</a>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Jane</td>
+            <td>30</td>
+        </tr>
+    </table>
+    
+    <img src="error.jpeg" alt="Error Image">
+
+    <div style="text-align: center;">This is centered text.</div>
+
+    <p style="background-color: lightgray;">Text</p>
+
+    <input type="button" value="Click me">
+
+    <!-- This is an unclosed comment -->
+
+    <a href="#">Link without closing tag</a>
+
+    <p><em>Underlined text</em></p>
+
+    <dl>
+        <dt>Descriptive Item Title</dt>
+        <dd>Descriptive Item Text</dd>
+    </dl>
+
+    <h2>List of Errors and Fixes</h2>
+    <ol>
+        <li><strong>Error:</strong> <code>&lt;html language="en"&gt;</code> <br> <strong>Fix:</strong> Changed to <code>&lt;html lang="en"&gt;</code> to correctly set the language attribute.</li>
+        <li><strong>Error:</strong> <code>&lt;title&gt;Error-Filled Page&lt;/title&gt;</code> <br> <strong>Fix:</strong> Moved the <code>&lt;title&gt;</code> tag inside the <code>&lt;head&gt;</code> section.</li>
+        <li><strong>Error:</strong> Missing closing tag for <code>&lt;h1&gt;</code>. <br> <strong>Fix:</strong> Added <code>&lt;/h1&gt;</code> to close the <code>&lt;h1&gt;</code> tag.</li>
+        <li><strong>Error:</strong> Mismatched paragraph tags. <br> <strong>Fix:</strong> Added <code>&lt;p&gt;</code> at the beginning and changed the closing <code>&lt;/p&gt;</code> to match the opening tag.</li>
+        <li><strong>Error:</strong> Closing tag for the list is incorrect (<code>&lt;/ul&gt;</code>). <br> <strong>Fix:</strong> Changed <code>&lt;/ul&gt;</code> to <code>&lt;/ol&gt;</code> to match the opening ordered list tag.</li>
+        <li><strong>Error:</strong> Missing closing tag for the paragraph. <br> <strong>Fix:</strong> Added <code>&lt;/p&gt;</code> to close the paragraph.</li>
+        <li><strong>Error:</strong> Missing <code>alt</code> attribute in the image tag. <br> <strong>Fix:</strong> Added <code>alt="Placeholder image"</code> to the image tag.</li>
+        <li><strong>Error:</strong> Incorrect closing tag for anchor (<code>&lt;/img&gt;</code>). <br> <strong>Fix:</strong> Changed <code>&lt;/img&gt;</code> to <code>&lt;/a&gt;</code> to properly close the anchor tag.</li>
+        <li><strong>Error:</strong> Missing closing <code>&lt;/td&gt;</code> tag. <br> <strong>Fix:</strong> Added <code>&lt;/td&gt;</code> after <code>25</code> in the table row.</li>
+        <li><strong>Error:</strong> Missing closing tag for the table. <br> <strong>Fix:</strong> Added <code>&lt;/table&gt;</code> to close the table.</li>
+        <li><strong>Error:</strong> Incorrect attribute <code>source</code> in image tag. <br> <strong>Fix:</strong> Changed <code>source="error.jpeg"</code> to <code>src="error.jpeg"</code>.</li>
+        <li><strong>Error:</strong> Deprecated <code>&lt;center&gt;</code> tag. <br> <strong>Fix:</strong> Replaced <code>&lt;center&gt;</code> with <code>&lt;div style="text-align: center;"&gt;</code> and added <code>&lt;/div&gt;</code> to close it.</li>
+        <li><strong>Error:</strong> Incorrect attribute <code>bgcolor</code> in paragraph. <br> <strong>Fix:</strong> Changed <code>bgcolor="lightgray"</code> to <code>style="background-color: lightgray;"</code>.</li>
+        <li><strong>Error:</strong> Unclosed comment. <br> <strong>Fix:</strong> Added <code>--&gt;</code> to close the comment.</li>
+        <li><strong>Error:</strong> Missing closing tag for anchor. <br> <strong>Fix:</strong> Added <code>&lt;/a&gt;</code> to close the anchor.</li>
+        <li><strong>Error:</strong> Incorrect nesting of tags. <br> <strong>Fix:</strong> Changed <code>&lt;p&gt;&lt;em&gt;Underlined text&lt;/p&gt;&lt;/em&gt;</code> to <code>&lt;p&gt;&lt;em&gt;Underlined text&lt;/em&gt;&lt;/p&gt;</code>.</li>
+        <li><strong>Error:</strong> Incorrect tags used in definition list. <br> <strong>Fix:</strong> Changed <code>&lt;li&gt;</code> tags to <code>&lt;dt&gt;</code> for title and <code>&lt;dd&gt;</code> for description.</li>
+        <li><strong>Error:</strong> Missing <code>&lt;!DOCTYPE html&gt;</code> declaration. <br> <strong>Fix:</strong> Added <code>&lt;!DOCTYPE html&gt;</code> at the top of the document.</li>
+        <li><strong>Error:</strong> Missing <code>&lt;meta charset="UTF-8"&gt;</code> tag. <br> <strong>Fix:</strong> Added <code>&lt;meta charset="UTF-8"&gt;</code> inside the <code>&lt;head&gt;</code> section.</li>
+        <li><strong>Error:</strong> Missing <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> tag. <br> <strong>Fix:</strong> Added <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> inside the <code>&lt;head&gt;</code> section.</li>
+    </ol>
+</body>
+</html>

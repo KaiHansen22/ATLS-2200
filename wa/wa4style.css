@@ -48,7 +48,7 @@ html {
 }
 
 /* Main business card contents styles */
-.card article img {
+.card-content img {
   max-height: 100%;
   float: right;
 }

@@ -1,11 +1,10 @@
 /* General page styles */
-
 body {
   margin: 0;
 }
 
 html {
-  font-family: 'Helvetica neue', Arial, 'sans-serif';
+  font-family: 'Helvetica neue', Arial, sans-serif;
   font-size: 10px;
   background-color: #ccc;
 }
@@ -15,13 +14,13 @@ html {
   width: 35em;
   height: 22em;
   margin: 5em auto;
-  background-color: red;
+  background-color: red; /* Correct spelling */
   border: 0.2em solid black;
   border-radius: 1.5em;
 }
 
 .blue-card {
-  background-color: blue;
+  background-color: blue; /* Set the background color to blue */
   border: 0.2em solid black;
   border-radius: 1.5em;
 }

@@ -22,25 +22,29 @@ html {
 
 .blue-card {
   background-color: blue;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
 }
 
 /* Header and footer styles */
-.card header {
+.card-header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
   border-radius: 1.5em 1.5em 0 0;
 }
 
-.card footer {
+.card-footer {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
   border-radius: 0 0 1.5em 1.5em;
 }
 
-.blue-card header {
+.blue-card-header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+  border-radius: 1.5em 1.5em 0 0;
 }
 
-.blue-card footer {
+.blue-card-footer {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1));
+  border-radius: 0 0 1.5em 1.5em;
 }
 
 /* Main business card contents styles */
@@ -64,6 +68,10 @@ h2, p {
 .card-content {
   height: 7.5em; /* 120px expressed in ems */
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+.blue-card-content {
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly more transparent black */
 }
 
 .card-header h2 {

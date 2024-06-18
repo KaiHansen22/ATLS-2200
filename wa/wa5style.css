@@ -39,6 +39,6 @@ body {
 }
 
 .info-overlay {
-    top: 20px; /* Adjusted to prevent cutting off */
+    bottom: 20px; /* Adjusted to prevent cutting off */
     right: 20px; /* Adjusted to prevent cutting off */
 }

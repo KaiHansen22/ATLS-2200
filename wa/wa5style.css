@@ -6,13 +6,16 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
-    overflow: hidden; /* Ensures no scrollbars appear */
+    padding: 20px; /* Adds padding around the body */
+    box-sizing: border-box; /* Ensures padding is included in the body size */
 }
 
 .image-container {
     position: relative;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px; /* Adds padding inside the image container */
+    box-sizing: border-box; /* Ensures padding is included in the container size */
 }
 
 .image-container img {
@@ -31,11 +34,11 @@ body {
 }
 
 .score-overlay {
-    top: 10px;
-    left: 10px;
+    top: 20px; /* Adjusted to prevent cutting off */
+    left: 20px; /* Adjusted to prevent cutting off */
 }
 
 .info-overlay {
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px; /* Adjusted to prevent cutting off */
+    right: 20px; /* Adjusted to prevent cutting off */
 }

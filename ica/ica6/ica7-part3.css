@@ -1,12 +1,61 @@
-#narrowScreen{
-
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
 }
-#wideScreen{
 
+/* Default styles for divs */
+div {
+    padding: 20px;
+    margin: 10px 0;
+    color: white;
+    text-align: center;
 }
-#shortScreen{
 
+/* Styles for #narrowScreen */
+#narrowScreen {
+    background-color: green; /* Default to green */
 }
-#tallScreen{
 
+/* Change to purple when screen is narrower than 600px */
+@media (max-width: 600px) {
+    #narrowScreen {
+        background-color: purple;
+    }
+}
+
+/* Styles for #wideScreen */
+#wideScreen {
+    background-color: red; /* Default to red */
+}
+
+/* Change to light blue when screen is wider than 800px */
+@media (min-width: 801px) {
+    #wideScreen {
+        background-color: lightblue;
+    }
+}
+
+/* Styles for #shortScreen */
+#shortScreen {
+    background-color: turquoise; /* Default to turquoise */
+}
+
+/* Change to yellow when screen is shorter than 500px */
+@media (max-height: 500px) {
+    #shortScreen {
+        background-color: yellow;
+    }
+}
+
+/* Styles for #tallScreen */
+#tallScreen {
+    background-color: lavender; /* Default to lavender */
+}
+
+/* Change to orange when screen is taller than 800px */
+@media (min-height: 801px) {
+    #tallScreen {
+        background-color: orange;
+    }
 }

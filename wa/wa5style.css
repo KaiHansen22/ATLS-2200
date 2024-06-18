@@ -34,8 +34,8 @@ body {
 }
 
 .score-overlay {
-    top: 20px; /* Adjusted to prevent cutting off */
-    left: 20px; /* Adjusted to prevent cutting off */
+    bottom: 20px; /* Positioned at the bottom */
+    left: 20px; /* Positioned on the left */
 }
 
 .info-overlay {

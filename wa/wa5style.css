@@ -12,9 +12,8 @@ body {
 
 .image-container {
     position: relative;
-    max-width: 100%;
-    max-height: 100%;
-    padding: 10px; /* Adds padding inside the image container */
+    max-width: 90%;
+    max-height: 90%;
     box-sizing: border-box; /* Ensures padding is included in the container size */
 }
 
@@ -22,6 +21,7 @@ body {
     width: 100%;
     height: auto;
     display: block;
+    border: 2px solid #ccc; /* Optional: Adds a border to see the image boundaries */
 }
 
 .overlay {
@@ -39,6 +39,6 @@ body {
 }
 
 .info-overlay {
-    bottom: 20px; /* Adjusted to prevent cutting off */
+    top: 20px; /* Adjusted to prevent cutting off */
     right: 20px; /* Adjusted to prevent cutting off */
 }

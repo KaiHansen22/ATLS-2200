@@ -6,17 +6,19 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    overflow: hidden; /* Ensures no scrollbars appear */
 }
 
 .image-container {
     position: relative;
-    display: inline-block;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 .image-container img {
-    display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    display: block;
 }
 
 .overlay {

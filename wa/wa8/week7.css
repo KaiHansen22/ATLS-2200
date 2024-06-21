@@ -1,0 +1,67 @@
+/* General Body Style */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightcyan; /* Updated background color */
+    font-family: 'Arial', sans-serif; /* Updated font */
+}
+
+/* Navigation Bar */
+nav {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkslateblue; /* Updated nav bar color */
+    width: 100%;
+    padding: 10px 0;
+}
+
+nav a {
+    width: 10vw;
+    text-align: center;
+    text-decoration: none;
+    color: white; /* Updated text color */
+    transition: color 0.5s ease-in-out; /* Added transition */
+}
+
+nav a:hover {
+    color: yellow; /* Transition effect on hover */
+}
+
+/* Image Style */
+img {
+    width: 30vw;
+    height: 30vh;
+    margin-top: 20px;
+}
+
+/* Animated Ball */
+#animated-ball {
+    background-color: darkorange; /* Updated ball color */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5vw;
+    top: 0;
+    animation: moveBall 5s infinite; /* Added animation */
+}
+
+/* Keyframes for Ball Animation */
+@keyframes moveBall {
+    0% {
+        top: 0;
+        left: 5vw;
+    }
+    50% {
+        top: 50vh;
+        left: 80vw;
+    }
+    100% {
+        top: 0;
+        left: 5vw;
+    }
+}

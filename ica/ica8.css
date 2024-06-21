@@ -1,0 +1,40 @@
+/* General Body Style */
+body {
+    background-color: khaki;
+}
+
+/* Box 1: Hover Effect */
+#box1 {
+    width: 25vw;
+    height: 20vh;
+    background-color: indianred;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#box1:hover {
+    background-color: purple;
+}
+
+/* Box 2: Movement and Transition */
+#box2 {
+    width: 25vw;
+    height: 20vh;
+    position: relative;
+    background-color: orangered;
+    transition: all 2s ease-in-out;
+}
+
+#box2:hover {
+    left: 50px;  /* Move right */
+    top: 50px;   /* Move down */
+    background-color: lightcoral;
+}
+
+@keyframes box2move {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(50px, 50px);
+    }
+}

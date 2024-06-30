@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA10 Interactive Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #colorBox {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        #textToggle {
+            margin-top: 20px;
+            cursor: pointer;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Elements</h1>
+    <div id="colorBox"></div>
+    <button id="changeColor">Change Color</button>
+    <p id="textToggle">Click to toggle text color</p>
+
+    <script>
+        document.getElementById('changeColor').addEventListener('click', function() {
+            var colorBox = document.getElementById('colorBox');
+            colorBox.style.backgroundColor = colorBox.style.backgroundColor === 'red' ? 'green' : 'red';
+        });
+
+        document.getElementById('textToggle').addEventListener('click', function() {
+            var textToggle = document.getElementById('textToggle');
+            textToggle.style.color = textToggle.style.color === 'blue' ? 'green' : 'blue';
+        });
+    </script>
+</body>
+</html>

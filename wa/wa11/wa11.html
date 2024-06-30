@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Image Gallery</title>
+  <link rel="stylesheet" href="styles.css"> <!-- You can create a CSS file for styling -->
+  <style>
+    /* Inline styles for simplicity in this example */
+    .thumb-bar {
+      overflow: hidden;
+    }
+    .thumb-bar img {
+      width: 20%;
+      cursor: pointer;
+    }
+    .full-img {
+      position: relative;
+      text-align: center;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0); /* Initial state */
+      pointer-events: none; /* So that clicks fall through to the button */
+    }
+    .dark {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>JavaScript Image Gallery</h1>
+
+<div class="full-img">
+  <img class="displayed-img" src="images/pic1.jpg" alt="Closeup of a blue human eye">
+  <div class="overlay"></div>
+  <button class="dark">Darken</button>
+</div>
+
+<div class="thumb-bar"></div>
+
+<script>
+  // JavaScript code goes here
+  const imageFiles = ['back2.png', 'IttensContrast1.png', 'IttensContrast2.png', 'IttensContrast3.png'];
+  const thumbBar = document.querySelector('.thumb-bar');
+  const displayedImg = document.querySelector('.displayed-img');
+  const btn = document.querySelector('.dark');
+  const overlay = document.querySelector('.overlay');
+
+  imageFiles.forEach((filename, index) => {
+    const newImage = document.createElement('img');
+    newImage.src = `images/${filename}`;
+    newImage.alt = `Picture ${index + 1}`;
+    
+    newImage.addEventListener('click', () => {
+      displayedImg.src = newImage.src;
+      displayedImg.alt = newImage.alt;
+    });
+
+    thumbBar.appendChild(newImage);
+  });
+
+  btn.addEventListener('click', () => {
+    if (btn.classList.contains('dark')) {
+      btn.classList.replace('dark', 'light');
+      btn.textContent = 'Lighten';
+      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+    } else {
+      btn.classList.replace('light', 'dark');
+      btn.textContent = 'Darken';
+      overlay.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+    }
+  });
+
+</script>
+
+</body>
+</html>

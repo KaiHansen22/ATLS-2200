@@ -6,11 +6,11 @@ function randomValueFromArray(array) {
     return array[Math.floor(Math.random() * array.length)];
 }
 
-const storyText = "On a chilly day of 45 fahrenheit, :insertx: decided to go for a jog. As they reached :inserty:, they couldn't believe their eyes and suddenly :insertz:. Bob witnessed everything, but was not startled — :insertx: weighs 150 pounds, and it was an unusual sight.";
+const storyText = "It was a bright and sunny day, and the temperature was 80 fahrenheit. :insertx: decided it was the perfect day to visit :inserty:. Upon arrival, they couldn't believe their eyes and suddenly :insertz:. Bob was nearby and saw the whole thing, but wasn't shocked — :insertx: always finds themselves in strange situations and weighs 200 pounds, which makes these events even more interesting.";
 
-const insertX = ['Jack the Giant', 'Super Grandma', 'Captain Marvel'];
-const insertY = ['the haunted house', 'the spooky forest', 'the mysterious cave'];
-const insertZ = ['vanished into thin air', 'started dancing wildly', 'transformed into a frog'];
+const insertX = ['Wendy the Witch', 'Sparky the Dragon', 'Captain Awesome'];
+const insertY = ['the magical meadow', 'the enchanted forest', 'the secret cave'];
+const insertZ = ['disappeared into thin air', 'started to dance crazily', 'turned into a giant cupcake'];
 
 randomize.addEventListener('click', result);
 
@@ -29,10 +29,10 @@ function result() {
     }
 
     if (document.getElementById("uk").checked) {
-        const weight = Math.round(150 * 0.0714286) + ' stone';
-        const temperature = Math.round((45 - 32) * 5 / 9) + ' centigrade';
-        newStory = newStory.replace('150 pounds', weight);
-        newStory = newStory.replace('45 fahrenheit', temperature);
+        const weight = Math.round(200 * 0.0714286) + ' stone';
+        const temperature = Math.round((80 - 32) * 5 / 9) + ' centigrade';
+        newStory = newStory.replace('200 pounds', weight);
+        newStory = newStory.replace('80 fahrenheit', temperature);
     }
 
     story.textContent = newStory;

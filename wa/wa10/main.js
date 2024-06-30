@@ -1,7 +1,7 @@
 document.getElementById('generate').addEventListener('click', generateStory);
 
 function generateStory() {
-    const storyText = 'It was a sunny day, and NAME decided to visit the local zoo. There, they encountered a talking parrot that shared some hilarious jokes! The jokes were very  ';
+    const storyText = 'It was a sunny day, and NAME decided to visit the local zoo. There, they encountered a talking parrot that shared some hilarious jokes! The jokes were very ADJECTIVE. ';
     let newStory = storyText;
     const name = document.getElementById('customname').value;
     const adjective = document.getElementById('customadjective').value;

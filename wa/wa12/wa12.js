@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const endpoint = 'https://api.api-ninjas.com/v1/quotes?category=inspirational';
-  const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
+  const apiKey = 'X-Api-Key'; 
 
   const quoteTextElement = document.getElementById('js-quote-text');
   const quoteAuthorElement = document.getElementById('js-quote-author');

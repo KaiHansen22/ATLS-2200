@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Function to fetch a random quote from the API
     function getQuote() {
       const category = 'inspirational'; // Example category
-      const endpoint = `https://api.api-ninjas.com/v1/quotes?category=${category}`;
+      const endpoint = `https://api.api-ninjas.com/v1/quotes`;
   
       fetch(endpoint, {
         headers: {

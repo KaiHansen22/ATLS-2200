@@ -3,59 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fake Desktop with Reminders</title>
+  <title>Reminder Utility</title>
   <style>
-    /* Base styles for desktop */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      margin: 0;
-      padding: 20px;
-    }
-    .desktop {
-      background-color: #fff;
-      padding: 20px;
-      border: 1px solid #ccc;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
-      max-width: 800px;
-      margin: 0 auto;
-      position: relative;
-    }
-    .desktop-icons {
-      position: absolute;
-      top: 0;
-      left: 0;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .desktop-icon {
-      width: 80px;
-      height: 80px;
-      background-color: #f0f0f0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      text-decoration: none;
-      color: #333;
-    }
-    .desktop-icon img {
-      max-width: 50px;
-      max-height: 50px;
-    }
-    .desktop-icon span {
-      margin-top: 5px;
-      display: block;
-    }
-    /* Reminder styles */
     .reminder {
       position: fixed;
       top: 20px;
@@ -77,23 +26,8 @@
   </style>
 </head>
 <body>
-  <div class="desktop">
-    <ul class="desktop-icons">
-      <li class="desktop-icon">
-        <img src="icon1.png" alt="Icon 1">
-        <span>App 1</span>
-      </li>
-      <li class="desktop-icon">
-        <img src="icon2.png" alt="Icon 2">
-        <span>App 2</span>
-      </li>
-      <!-- Add more icons as needed -->
-    </ul>
-
-    <!-- Reminder Container -->
-    <button onclick="addReminder()">Add Reminder</button>
-    <div id="reminderContainer"></div>
-  </div>
+  <button onclick="addReminder()">Add Reminder</button>
+  <div id="reminderContainer"></div>
 
   <script>
    

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reminder Utility</title>
+  <style>
+    .reminder {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      max-width: 300px;
+      overflow-wrap: break-word;
+      margin-bottom: 10px;
+    }
+    .delete-btn {
+      cursor: pointer;
+      float: right;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="addReminder()">Add Reminder</button>
+  <div id="reminderContainer"></div>
+
+  <script>
+   
+  function addReminder() {
+    const reminderText = prompt("Enter your reminder:");
+    if (reminderText) {
+      const reminderId = Date.now(); // Unique ID for each reminder
+      const reminderDiv = document.createElement('div');
+      reminderDiv.className = 'reminder';
+      reminderDiv.id = 'reminder_' + reminderId;
+
+      const deleteBtn = document.createElement('span');
+      deleteBtn.className = 'delete-btn';
+      deleteBtn.innerHTML = '&times;';
+      deleteBtn.onclick = function() {
+        const reminderToRemove = document.getElementById('reminder_' + reminderId);
+        if (reminderToRemove) {
+          reminderToRemove.remove();
+        }
+      };
+
+      reminderDiv.innerHTML = reminderText;
+      reminderDiv.appendChild(deleteBtn);
+      
+      document.getElementById('reminderContainer').appendChild(reminderDiv);
+    }
+  }
+</script>
+
+
+</body>
+</html>

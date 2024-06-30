@@ -1,18 +1,39 @@
-document.getElementById('generate').addEventListener('click', generateStory);
+const customName = document.getElementById('customName');
+const randomize = document.querySelector('#randomize');
+const story = document.querySelector('#story');
 
-function generateStory() {
-    const storyText = 'It was a sunny day, and NAME decided to visit the local zoo. There, they encountered a talking parrot that shared some hilarious jokes! The jokes were very ADJECTIVE. ';
+function randomValueFromArray(array) {
+    return array[Math.floor(Math.random() * array.length)];
+}
+
+const storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
+
+const insertX = ['Willy the Goblin', 'Big Daddy', 'Father Christmas'];
+const insertY = ['the soup kitchen', 'Disneyland', 'the White House'];
+const insertZ = ['spontaneously combusted', 'melted into a puddle on the sidewalk', 'turned into a slug and crawled away'];
+
+randomize.addEventListener('click', result);
+
+function result() {
     let newStory = storyText;
-    const name = document.getElementById('customname').value;
-    const adjective = document.getElementById('customadjective').value;
+    const xItem = randomValueFromArray(insertX);
+    const yItem = randomValueFromArray(insertY);
+    const zItem = randomValueFromArray(insertZ);
 
-    if(name !== '') {
-        newStory = newStory.replace('NAME', name);
-        newStory = newStory.replace('ADJECTIVE', adjective);
-    } else {
-        newStory = newStory.replace('NAME', 'Bob');
+    newStory = newStory.replace(':insertx:', xItem).replace(':insertx:', xItem);
+    newStory = newStory.replace(':inserty:', yItem);
+    newStory = newStory.replace(':insertz:', zItem);
+
+    if (customName.value !== '') {
+        newStory = newStory.replace('Bob', customName.value);
     }
 
-    document.getElementById('story').textContent = newStory;
-    document.getElementById('story').style.visibility = 'visible';
+    if (document.getElementById("uk").checked) {
+        const weight = Math.round(300 * 0.0714286) + ' stone';
+        const temperature = Math.round((94 - 32) * 5 / 9) + ' centigrade';
+        newStory = newStory.replace('300 pounds', weight);
+        newStory = newStory.replace('94 fahrenheit', temperature);
+    }
+
+    story.textContent = newStory;
 }

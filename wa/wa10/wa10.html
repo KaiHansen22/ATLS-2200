@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silly Story Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Silly Story Generator</h1>
-    <form>
-        <label for="customname">Enter a custom name:</label>
-        <input id="customname" type="text">
-        <label for="customadjective">Enter a custom adjective:</label>
-        <input id="customadjective" type="text">
-        <input type="button" id="generate" value="Generate story">
-    </form>
-    <div id="story"></div>
+    <div class="container">
+        <h1>Silly Story Generator</h1>
+        <label for="customName">Enter custom name:</label>
+        <input type="text" id="customName">
+        <br>
+        <label><input type="radio" name="uk" id="uk"> UK</label>
+        <label><input type="radio" name="uk" id="us" checked> US</label>
+        <br>
+        <button id="randomize">Generate random story</button>
+        <p id="story"></p>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

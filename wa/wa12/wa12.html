@@ -2,21 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="wa12.css">
-    <title>Quote Machine</title>
+    <title>Random Quote Generator</title>
+    <!-- Add any CSS if needed -->
 </head>
 <body>
-    <div class="container">
-        <header>Random Quote Machine</header>
-        <section class="quotes">
-            <div class="quote-text" id="js-quote-text"></div>
-            <div class="quote-author" id="js-quote-author"></div>
-        </section>
-        <section class="controls">
-            <button type="button" id="js-new-quote">Get New Quote</button>
-        </section>
+    <div id="quote-container">
+        <blockquote id="quote"></blockquote>
+        <p id="author"></p>
+        <button id="new-quote">New Quote</button>
     </div>
     <script src="wa12.js"></script>
 </body>

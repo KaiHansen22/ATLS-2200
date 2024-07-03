@@ -5,6 +5,12 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background: linear-gradient(135deg, #ffcc33, #ff6699);
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 20px;
 }
 
 .phone-number {
@@ -17,4 +23,24 @@ body {
     height: 30px;
     text-align: center;
     font-size: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.digit:nth-child(1) { background-color: #ff9999; color: #000; }
+.digit:nth-child(2) { background-color: #ffcc99; color: #000; }
+.digit:nth-child(3) { background-color: #ffff99; color: #000; }
+.digit:nth-child(4) { background-color: #ccff99; color: #000; }
+.digit:nth-child(5) { background-color: #99ff99; color: #000; }
+.digit:nth-child(6) { background-color: #99ffcc; color: #000; }
+.digit:nth-child(7) { background-color: #99ffff; color: #000; }
+.digit:nth-child(8) { background-color: #99ccff; color: #000; }
+.digit:nth-child(9) { background-color: #9999ff; color: #000; }
+.digit:nth-child(10) { background-color: #cc99ff; color: #000; }
+
+.digit:focus {
+    background-color: #000;
+    color: #fff;
+    outline: none;
 }

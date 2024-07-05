@@ -16,6 +16,7 @@ h1 {
 .phone-number {
     display: flex;
     gap: 5px;
+    margin-bottom: 20px;
 }
 
 .digit {
@@ -43,4 +44,20 @@ h1 {
     background-color: #000;
     color: #fff;
     outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #ff6699;
+    border: 2px solid #ff6699;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #ff6699;
+    color: #fff;
 }
